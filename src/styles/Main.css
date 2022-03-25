@@ -28,7 +28,7 @@ body {
   }
    }
 .messageBox{
-    width: 940px;
+    width: 941px;
     position: absolute;
     top:50px;
     word-wrap: break-word;
@@ -72,7 +72,18 @@ body {
 	transform: rotate(-180deg);
 	animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
 }
-
+.facebook-logo:hover{
+    color: royalblue !important;
+}
+.codepen-logo:hover{
+    color: royalblue  !important;
+}
+.linkedin-logo:hover{
+    color: royalblue  !important;
+}
+.github-logo:hover{
+    color: royalblue  !important;
+}
 .shape-blob.two{
     z-index: -999;
 	height: 350px;

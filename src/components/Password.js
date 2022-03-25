@@ -2,6 +2,7 @@ import React from 'react'
 import { Slider } from '@mui/material';
 import "../styles/Password.css"
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { AiFillThunderbolt } from "react-icons/ai";
 export default function Password() {
     let myArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_',
@@ -68,7 +69,7 @@ export default function Password() {
                         <p id="random-pass" className='myP'>Random Password</p>
                         <p id="third-p" className='myP'>Never use an insecure password again.</p>
                         <div className='slider-button'>
-                            <button onClick={generatePassword} className="bottom-password">Generate Password</button>
+                            <button onClick={generatePassword} className="bottom-password"><AiFillThunderbolt className='thunder-logo'/>Generate Password</button>
                             <div className='slider'>
                                 <Slider min={10} max={20} value={sliderValue} onChange={handleChangeSlider} />
                                 <div className='slider-value'>{sliderValue}</div>
